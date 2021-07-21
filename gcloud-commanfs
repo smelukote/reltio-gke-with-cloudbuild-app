@@ -1,0 +1,20 @@
+gcloud config set project [PROJECT_ID]
+#######
+gcloud services enable container.googleapis.com \
+cloudbuild.googleapis.com \
+sourcerepo.googleapis.com \
+containeranalysis.googleapis.com
+#####
+gcloud container clusters create hello-cloudbuild \
+--num-nodes 1 --zone us-central1-b
+#####
+git config --global user.email "[YOUR_EMAIL_ADDRESS]"
+git config --global user.name "[YOUR_NAME]"
+#####
+
+
+
+
+
+
+
